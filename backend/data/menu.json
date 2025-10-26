@@ -1,0 +1,93 @@
+[
+  {
+    "id": "m1",
+    "name": "Domino's Pizza",
+    "price": 599,
+    "img": "\ud83c\udf55",
+    "category": "Pizza"
+  },
+  {
+    "id": "m2",
+    "name": "Veg Burger",
+    "price": 149,
+    "img": "\ud83c\udf54",
+    "category": "Burger"
+  },
+  {
+    "id": "m3",
+    "name": "Chicken Biryani",
+    "price": 249,
+    "img": "\ud83c\udf57",
+    "category": "Biryani"
+  },
+  {
+    "id": "m4",
+    "name": "Masala Dosa",
+    "price": 129,
+    "img": "\ud83e\udd5e",
+    "category": "South Indian"
+  },
+  {
+    "id": "m5",
+    "name": "Paneer Butter Masala",
+    "price": 219,
+    "img": "\ud83c\udf5b",
+    "category": "North Indian"
+  },
+  {
+    "id": "m6",
+    "name": "Tandoori Chicken",
+    "price": 299,
+    "img": "\ud83c\udf57",
+    "category": "Grill"
+  },
+  {
+    "id": "m7",
+    "name": "Veg Fried Rice",
+    "price": 159,
+    "img": "\ud83c\udf5a",
+    "category": "Chinese"
+  },
+  {
+    "id": "m8",
+    "name": "Pasta Arrabbiata",
+    "price": 199,
+    "img": "\ud83c\udf5d",
+    "category": "Italian"
+  },
+  {
+    "id": "m9",
+    "name": "French Fries",
+    "price": 99,
+    "img": "\ud83c\udf5f",
+    "category": "Snacks"
+  },
+  {
+    "id": "m10",
+    "name": "Sushi Platter",
+    "price": 349,
+    "img": "\ud83c\udf63",
+    "category": "Japanese"
+  },
+  {
+    "id": "m11",
+    "name": "Caesar Salad",
+    "price": 179,
+    "img": "\ud83e\udd57",
+    "category": "Salad"
+  },
+  {
+    "id": "m12",
+    "name": "Ice Cream Sundae",
+    "price": 129,
+    "img": "\ud83c\udf68",
+    "category": "Dessert"
+  },
+  {
+    "id": "m13",
+    "name": "Cold Coffee",
+    "price": 119,
+    "img": "\u2615\ufe0f",
+    "category": "Beverage"
+  }
+]

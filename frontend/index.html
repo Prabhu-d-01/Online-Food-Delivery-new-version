@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YumRush • Food Delivery</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">🍽️ TastyTrack</div>
+    <div class="actions">
+      <button id="view-cart">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Order fresh & fast food near you</h1>
+      <p>Hot meals to your door in minutes.</p>
+    </section>
+
+    <section>
+      <h2>Menu</h2>
+      <div id="menu" class="grid"></div>
+    </section>
+
+    <section id="cart-panel" class="cart hidden">
+      <h2>Your Cart</h2>
+      <div id="cart-list"></div>
+      <div class="cart-foot">
+        <div>Total: ₹<span id="cart-total">0</span></div>
+        <button id="checkout">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> TastyTrack</footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

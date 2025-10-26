@@ -1,0 +1,19 @@
+{
+  "name": "food-delivery-backend",
+  "version": "1.0.0",
+  "description": "Minimal food delivery API (Express, file-based storage)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nanoid": "^5.0.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
