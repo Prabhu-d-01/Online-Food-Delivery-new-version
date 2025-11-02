@@ -42,3 +42,232 @@ body {
 .qty button { width:24px; height:24px; border-radius:6px; border:1px solid #334155; background:#111827; color:#e5e7eb; cursor:pointer; }
 .cart-foot { display:flex; align-items:center; justify-content:space-between; margin-top: 10px; }
 .footer { text-align:center; color: var(--muted); padding: 30px 0; }
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #111827;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #1f2937;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.close:hover {
+  color: var(--text);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background-color: #0f172a;
+  color: var(--text);
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-cancel,
+.btn-submit,
+.btn-close {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-cancel {
+  background: #1f2937;
+  color: var(--text);
+}
+
+.btn-cancel:hover {
+  background: #374151;
+}
+
+.btn-submit,
+.btn-close {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-submit:hover,
+.btn-close:hover {
+  background: #7c3aed;
+  transform: translateY(-1px);
+}
+
+/* Order Summary */
+.order-summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: #0f172a;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+}
+
+.order-summary h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1f2937;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px 15px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+}
+
+/* QR Code Styles */
+.qrcode-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+
+.qrcode-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.amount-display {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+  color: var(--accent);
+}
+
+.payment-options {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.payment-options p {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.payment-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.payment-option {
+  padding: 8px 15px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: var(--text);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payment-option:hover {
+  background: #1e293b;
+  border-color: var(--accent);
+}
+
+#payment-success {
+  display: block;
+  width: 100%;
+  margin: 20px 0 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+#cancel-payment {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #334155;
+}
+
+#cancel-payment:hover {
+  background: #1f2937;
+}
